@@ -8,7 +8,9 @@ body {
     height: 100vh;
     width: 100%;
     display: flex;
+    align-items: center;
     justify-content: center;
+    flex-direction: column;
     /* padding-top: ; */
 }
 
@@ -138,4 +140,13 @@ body {
 
 #btn19:active{
     background-color: #e6a15c;
+}
+
+footer{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: #342a4d;
 }
