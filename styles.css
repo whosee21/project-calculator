@@ -1,0 +1,139 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* padding-top: ; */
+}
+
+#calculator {
+    background-color: #75baff;
+    margin-top: 2rem;
+    height: 93%;
+    width: 450px;
+    border: solid 3px #383838;
+    border-top-left-radius: 35px 50px;
+    border-top-right-radius: 35px 50px;
+    border-bottom-left-radius: 35px 50px;
+    border-bottom-right-radius: 35px 50px;
+}
+
+#display-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: grey;
+    border: solid 3px #383838;
+    border-radius: 30px;
+    margin-top: 20px;
+    width: 90%;
+    height: 25%;
+    justify-self: center;
+}
+
+#display-top{
+    font-family:'Kristen ITC', Calibri, 'Lucida Sans', sans-serif;
+    font-size: 30px;
+    /* background-color: #06ad06; */
+    height: 40%;
+    text-align: end;
+    padding: 20px 15px;
+}
+
+#display-bot{
+    font-family:'Kristen ITC', Calibri, 'Lucida Sans', sans-serif;
+    /* background-color: rebeccapurple; */
+    font-size: 50px;
+    height: 60%;
+    text-align: end;
+    padding: 5px 15px;
+}
+
+#button-container {
+    /* background-color: blueviolet; */
+    border-radius: 30px;
+    justify-self: center;
+    margin-top: 35px;
+    width: 90%;
+    height: 64%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    align-items: center;
+    justify-content:space-evenly;
+    gap: 10px;
+    
+
+}
+
+.buttons {
+    font-family:'Kristen ITC', Calibri, 'Lucida Sans', sans-serif;
+    font-size: 20px;
+    color: #4b4343;
+    width: 30px;
+    height: 50px;
+    background-color: #eeebeb;
+    border: solid 3px #2c2c2c;
+    border-radius: 15px;
+}
+
+.buttons:hover {
+    background-color: #cccccc;
+    cursor: pointer;
+}
+
+.buttons:active {
+    background-color: #a3a2a2;
+}
+
+#btn1{
+    background-color: #d8370e;
+    color: #dfdfdf;
+    font-weight: bold;
+}
+
+#btn1:active{
+    background-color: #b42b09;
+}
+
+#btn4 {
+    background-color: #06ad06;
+    color: #dfdfdf;
+    font-weight: bold;
+    border-top-left-radius: 100px 100px;
+    border-bottom-left-radius: 100px 100px;
+}
+
+#btn4:active {
+    background-color: #048504;
+}
+
+#btn2, #btn3{
+    background-color: #FFDF00;
+    border-radius: 100%;
+}
+
+#btn2:active, #btn3:active{
+    background-color: #cab006;
+}
+
+#btn21 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#btn23 {
+    background-color: #db7108;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+#btn23:active{
+    background-color: #e6a15c;
+}
