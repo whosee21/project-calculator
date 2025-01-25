@@ -15,7 +15,7 @@ body {
 #calculator {
     background-color: #75baff;
     margin-top: 2rem;
-    height: 93%;
+    height: 85%;
     width: 450px;
     border: solid 3px #383838;
     border-top-left-radius: 35px 50px;
@@ -53,6 +53,8 @@ body {
     height: 60%;
     text-align: end;
     padding: 5px 15px;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 #button-container {
@@ -123,17 +125,17 @@ body {
     background-color: #cab006;
 }
 
-#btn21 {
+#btn17 {
     font-size: 30px;
     font-weight: bold;
 }
 
-#btn23 {
+#btn19 {
     background-color: #db7108;
     font-size: 26px;
     font-weight: bold;
 }
 
-#btn23:active{
+#btn19:active{
     background-color: #e6a15c;
 }
