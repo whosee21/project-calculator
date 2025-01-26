@@ -45,7 +45,9 @@ body {
     /* background-color: #06ad06; */
     height: 40%;
     text-align: end;
-    padding: 20px 15px;
+    padding: 15px 15px;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 #display-bot{
