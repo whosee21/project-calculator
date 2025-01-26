@@ -26,9 +26,11 @@ let displayTop = document.getElementById('display-top');
 
 buttons.forEach(btn => {
     btn.addEventListener('click', (e) => {
-        e = e.target.textContent;
-        displayOperation(e);
+        const event = e.target.textContent;
+        displayOperation(event);
+        e.target.blur();
     });
+    
 });
 
 document.addEventListener('keydown', (e) => {
@@ -45,6 +47,10 @@ document.addEventListener('keydown', (e) => {
         return;
     } else if (key == 'Enter'){
         displayOperation('=');
+        return;
+    } else if (e.code == 'Backspace'){ 
+        if (displayBot.textContent == "Eh???") return;
+        displayBot.textContent = displayBot.textContent.slice(0,-1);
         return;
     }
     displayOperation(key);
@@ -87,8 +93,8 @@ function displayOperation(e) {
 
         case 'C': clear();
             break;
-            
-        case ('X','Backspace'): if (displayBot.textContent == "Eh???") break;
+
+        case ('X'): if (displayBot.textContent == "Eh???") break;
             displayBot.textContent = displayBot.textContent.slice(0,-1);
             break;
 
